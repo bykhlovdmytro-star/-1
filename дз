@@ -1,0 +1,16 @@
+class Films:
+    def play_film(self):
+        print("Play Films")
+        
+class AnimatedFilm:
+    def play_AnimatedFilm(self):
+        print("Play AnimatedFilm")
+        
+class MultimediaPlayer(Films,AnimatedFilm):
+    def play(self):
+        print("Multimedia is playing")
+      
+player = MultimediaPlayer()
+player.play_film()
+player.play_AnimatedFilm()
+player.play()
